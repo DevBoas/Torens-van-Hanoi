@@ -195,7 +195,7 @@ namespace Torens_van_Hanoi
             // 
             this.Btn_ResetGame.Location = new System.Drawing.Point(12, 36);
             this.Btn_ResetGame.Name = "Btn_ResetGame";
-            this.Btn_ResetGame.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ResetGame.Size = new System.Drawing.Size(86, 23);
             this.Btn_ResetGame.TabIndex = 17;
             this.Btn_ResetGame.Text = "Reset";
             this.Btn_ResetGame.UseVisualStyleBackColor = true;
