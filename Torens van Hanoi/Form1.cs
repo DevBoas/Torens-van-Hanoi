@@ -198,6 +198,36 @@ namespace Torens_van_Hanoi
             }
         }
 
+        private void Btn_ResetGame_Click(object sender, EventArgs e)
+        {
+            moves = 0;
+            LabelMovesDisplay.Text = "Moves: " + moves.ToString();
+            for (int i = 0; i < jaggedArray3.Length; i++)
+            {
+                for (int y = 0; y < jaggedArray3[i].Length; y++)
+                {
+                    if (i > 0)
+                        jaggedArray3[i][y] = 0;
+                    else
+                        jaggedArray3[i][y] = (8 - y);
+                }
+            }
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof(PictureBox))
+                {
+                    PictureBox pic = (PictureBox)c;
+                    if (pic.Tag != null)
+                    {
+                        int num = System.Convert.ToInt32(pic.Tag);
+                        int tow = whichTower(pic);
+                        num = 8 - num;
+                        pic.Location = pic.Location - new Size(200 * tow, 0);
+                        pic.Location = new Point(pic.Location.X, startY - (num * 8));
+                    }
+                }
+            }
+        }
 
     }
 }

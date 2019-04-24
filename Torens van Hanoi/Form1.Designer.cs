@@ -30,27 +30,28 @@ namespace Torens_van_Hanoi
         {
             this.Toren3 = new System.Windows.Forms.PictureBox();
             this.Toren2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Ring6 = new System.Windows.Forms.PictureBox();
+            this.Ring1 = new System.Windows.Forms.PictureBox();
+            this.Ring2 = new System.Windows.Forms.PictureBox();
+            this.Ring3 = new System.Windows.Forms.PictureBox();
+            this.Ring4 = new System.Windows.Forms.PictureBox();
+            this.Ring5 = new System.Windows.Forms.PictureBox();
+            this.Ring8 = new System.Windows.Forms.PictureBox();
             this.Toren1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Ring7 = new System.Windows.Forms.PictureBox();
             this.LabelMovesDisplay = new System.Windows.Forms.Label();
+            this.Btn_ResetGame = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Toren3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring7)).BeginInit();
             this.SuspendLayout();
             // 
             // Toren3
@@ -73,89 +74,89 @@ namespace Torens_van_Hanoi
             this.Toren2.TabStop = false;
             this.Toren2.Click += new System.EventHandler(this.Toren2_Click);
             // 
-            // pictureBox10
+            // Ring6
             // 
-            this.pictureBox10.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox10.Location = new System.Drawing.Point(120, 270);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(80, 7);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 10;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "6";
-            this.pictureBox10.Click += new System.EventHandler(this.Select);
+            this.Ring6.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring6.Location = new System.Drawing.Point(120, 270);
+            this.Ring6.Name = "Ring6";
+            this.Ring6.Size = new System.Drawing.Size(80, 7);
+            this.Ring6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring6.TabIndex = 10;
+            this.Ring6.TabStop = false;
+            this.Ring6.Tag = "6";
+            this.Ring6.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox9
+            // Ring1
             // 
-            this.pictureBox9.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox9.Location = new System.Drawing.Point(150, 230);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 7);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "1";
-            this.pictureBox9.Click += new System.EventHandler(this.Select);
+            this.Ring1.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring1.Location = new System.Drawing.Point(150, 230);
+            this.Ring1.Name = "Ring1";
+            this.Ring1.Size = new System.Drawing.Size(30, 7);
+            this.Ring1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring1.TabIndex = 9;
+            this.Ring1.TabStop = false;
+            this.Ring1.Tag = "1";
+            this.Ring1.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox8
+            // Ring2
             // 
-            this.pictureBox8.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox8.Location = new System.Drawing.Point(144, 238);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(40, 7);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "2";
-            this.pictureBox8.Click += new System.EventHandler(this.Select);
+            this.Ring2.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring2.Location = new System.Drawing.Point(144, 238);
+            this.Ring2.Name = "Ring2";
+            this.Ring2.Size = new System.Drawing.Size(40, 7);
+            this.Ring2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring2.TabIndex = 8;
+            this.Ring2.TabStop = false;
+            this.Ring2.Tag = "2";
+            this.Ring2.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox7
+            // Ring3
             // 
-            this.pictureBox7.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox7.Location = new System.Drawing.Point(138, 246);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 7);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "3";
-            this.pictureBox7.Click += new System.EventHandler(this.Select);
+            this.Ring3.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring3.Location = new System.Drawing.Point(138, 246);
+            this.Ring3.Name = "Ring3";
+            this.Ring3.Size = new System.Drawing.Size(50, 7);
+            this.Ring3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring3.TabIndex = 7;
+            this.Ring3.TabStop = false;
+            this.Ring3.Tag = "3";
+            this.Ring3.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox6
+            // Ring4
             // 
-            this.pictureBox6.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox6.Location = new System.Drawing.Point(132, 254);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 7);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "4";
-            this.pictureBox6.Click += new System.EventHandler(this.Select);
+            this.Ring4.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring4.Location = new System.Drawing.Point(132, 254);
+            this.Ring4.Name = "Ring4";
+            this.Ring4.Size = new System.Drawing.Size(60, 7);
+            this.Ring4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring4.TabIndex = 6;
+            this.Ring4.TabStop = false;
+            this.Ring4.Tag = "4";
+            this.Ring4.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox5
+            // Ring5
             // 
-            this.pictureBox5.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox5.Location = new System.Drawing.Point(126, 262);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(70, 7);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "5";
-            this.pictureBox5.Click += new System.EventHandler(this.Select);
+            this.Ring5.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring5.Location = new System.Drawing.Point(126, 262);
+            this.Ring5.Name = "Ring5";
+            this.Ring5.Size = new System.Drawing.Size(70, 7);
+            this.Ring5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring5.TabIndex = 5;
+            this.Ring5.TabStop = false;
+            this.Ring5.Tag = "5";
+            this.Ring5.Click += new System.EventHandler(this.Select);
             // 
-            // pictureBox4
+            // Ring8
             // 
-            this.pictureBox4.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox4.Location = new System.Drawing.Point(108, 286);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 7);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "8";
-            this.pictureBox4.Click += new System.EventHandler(this.Select);
+            this.Ring8.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring8.Location = new System.Drawing.Point(108, 286);
+            this.Ring8.Name = "Ring8";
+            this.Ring8.Size = new System.Drawing.Size(100, 7);
+            this.Ring8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring8.TabIndex = 4;
+            this.Ring8.TabStop = false;
+            this.Ring8.Tag = "8";
+            this.Ring8.Click += new System.EventHandler(this.Select);
             // 
             // Toren1
             // 
@@ -167,18 +168,18 @@ namespace Torens_van_Hanoi
             this.Toren1.TabStop = false;
             this.Toren1.Click += new System.EventHandler(this.Toren1_Click);
             // 
-            // pictureBox1
+            // Ring7
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 278);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 7);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "7";
-            this.pictureBox1.Click += new System.EventHandler(this.Select);
+            this.Ring7.BackColor = System.Drawing.SystemColors.Control;
+            this.Ring7.Image = global::Torens_van_Hanoi.Properties.Resources.Ring8;
+            this.Ring7.Location = new System.Drawing.Point(114, 278);
+            this.Ring7.Name = "Ring7";
+            this.Ring7.Size = new System.Drawing.Size(90, 7);
+            this.Ring7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ring7.TabIndex = 15;
+            this.Ring7.TabStop = false;
+            this.Ring7.Tag = "7";
+            this.Ring7.Click += new System.EventHandler(this.Select);
             // 
             // LabelMovesDisplay
             // 
@@ -190,20 +191,31 @@ namespace Torens_van_Hanoi
             this.LabelMovesDisplay.TabIndex = 16;
             this.LabelMovesDisplay.Text = "Moves: 0";
             // 
+            // Btn_ResetGame
+            // 
+            this.Btn_ResetGame.Location = new System.Drawing.Point(12, 36);
+            this.Btn_ResetGame.Name = "Btn_ResetGame";
+            this.Btn_ResetGame.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ResetGame.TabIndex = 17;
+            this.Btn_ResetGame.Text = "Reset";
+            this.Btn_ResetGame.UseVisualStyleBackColor = true;
+            this.Btn_ResetGame.Click += new System.EventHandler(this.Btn_ResetGame_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 292);
+            this.Controls.Add(this.Btn_ResetGame);
             this.Controls.Add(this.LabelMovesDisplay);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.Ring7);
+            this.Controls.Add(this.Ring6);
+            this.Controls.Add(this.Ring1);
+            this.Controls.Add(this.Ring2);
+            this.Controls.Add(this.Ring3);
+            this.Controls.Add(this.Ring4);
+            this.Controls.Add(this.Ring5);
+            this.Controls.Add(this.Ring8);
             this.Controls.Add(this.Toren1);
             this.Controls.Add(this.Toren2);
             this.Controls.Add(this.Toren3);
@@ -212,15 +224,15 @@ namespace Torens_van_Hanoi
             this.Text = "Torens van Hanoi";
             ((System.ComponentModel.ISupportInitialize)(this.Toren3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ring7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,18 +240,19 @@ namespace Torens_van_Hanoi
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox Ring8;
+        private System.Windows.Forms.PictureBox Ring5;
+        private System.Windows.Forms.PictureBox Ring4;
+        private System.Windows.Forms.PictureBox Ring3;
+        private System.Windows.Forms.PictureBox Ring2;
+        private System.Windows.Forms.PictureBox Ring1;
+        private System.Windows.Forms.PictureBox Ring6;
         private System.Windows.Forms.PictureBox Toren1;
         private System.Windows.Forms.PictureBox Toren2;
         private System.Windows.Forms.PictureBox Toren3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Ring7;
         private System.Windows.Forms.Label LabelMovesDisplay;
+        private System.Windows.Forms.Button Btn_ResetGame;
     }
 }
 
