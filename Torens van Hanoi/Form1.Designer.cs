@@ -60,6 +60,7 @@ namespace Torens_van_Hanoi
             this.Toren3.Size = new System.Drawing.Size(20, 100);
             this.Toren3.TabIndex = 14;
             this.Toren3.TabStop = false;
+            this.Toren3.Click += new System.EventHandler(this.Toren3_Click);
             // 
             // Toren2
             // 
@@ -184,7 +185,6 @@ namespace Torens_van_Hanoi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 292);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Toren3);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -194,6 +194,7 @@ namespace Torens_van_Hanoi
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.Toren1);
             this.Controls.Add(this.Toren2);
+            this.Controls.Add(this.Toren3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
