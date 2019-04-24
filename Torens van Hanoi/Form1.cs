@@ -21,6 +21,8 @@ namespace Torens_van_Hanoi
             InitializeComponent();
         }
         int startY = 286;
+        int moves = 0;
+
         PictureBox selection;
         int[][] jaggedArray3 =
             {
@@ -35,7 +37,7 @@ namespace Torens_van_Hanoi
             if (selection != null)
             {
                 int tow = whichTower(selection);
-                MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower1");
+                ///MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower1");
                 int num = System.Convert.ToInt32(selection.Tag);
                 int index = place(num, 0);
                 if (index != -1)
@@ -43,8 +45,8 @@ namespace Torens_van_Hanoi
                     remove(num, tow);
                     object O = Resources.ResourceManager.GetObject("Ring8");
                     selection.Image = (Image)O;
-                    MessageBox.Show("Multiplier = " + index.ToString());
-                    MessageBox.Show("Offset = " + (index * 9).ToString());
+                    ///MessageBox.Show("Multiplier = " + index.ToString());
+                    ///MessageBox.Show("Offset = " + (index * 9).ToString());
                     selection.Location = new Point(selection.Location.X, startY - ((index) * 8));
                     if (tow == 1)
                         selection.Location = selection.Location - new Size(200, 0);
@@ -64,14 +66,14 @@ namespace Torens_van_Hanoi
             if (selection != null)
             {
                 int tow = whichTower(selection);
-                MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower2");
+                ///MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower2");
                 int num = System.Convert.ToInt32(selection.Tag);
                 int index = place(num, 1);
                 if (index != -1){
                     remove(num, tow);
                     object O = Resources.ResourceManager.GetObject("Ring8");
                     selection.Image = (Image)O;
-                    MessageBox.Show("Offset = " + (index * 9).ToString());
+                    ///MessageBox.Show("Offset = " + (index * 9).ToString());
                     selection.Location = new Point(selection.Location.X, startY - (index * 8) );
                     if (tow == 0)
                         selection.Location = selection.Location + new Size(200, 0);
@@ -90,7 +92,7 @@ namespace Torens_van_Hanoi
             if (selection != null)
             {
                 int tow = whichTower(selection);
-                MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower3");
+                ///MessageBox.Show("Attempting to move from tower" + tow.ToString() + " to tower3");
                 int num = System.Convert.ToInt32(selection.Tag);
                 int index = place(num, 2);
                 if (index != -1)
@@ -98,7 +100,7 @@ namespace Torens_van_Hanoi
                     remove(num, tow);
                     object O = Resources.ResourceManager.GetObject("Ring8");
                     selection.Image = (Image)O;
-                    MessageBox.Show("Offset = " + (index * 9).ToString());
+                    ///MessageBox.Show("Offset = " + (index * 9).ToString());
                     selection.Location = new Point(selection.Location.X, startY - (index * 8));
                     if (tow == 1)
                         selection.Location = selection.Location + new Size(200, 0);
@@ -121,7 +123,7 @@ namespace Torens_van_Hanoi
                 if (jaggedArray3[tow][i] == num)
                 {
                     jaggedArray3[tow][i] = 0;
-                    MessageBox.Show("Removed ring" + num.ToString() + " from tower" + tow.ToString());
+                    ///MessageBox.Show("Removed ring" + num.ToString() + " from tower" + tow.ToString());
                     break;
                 }
             }
@@ -143,6 +145,11 @@ namespace Torens_van_Hanoi
                     index = i;
                 }
             }
+            if (index != -1)
+            {
+                moves++;
+                LabelMovesDisplay.Text = "Moves: " + moves.ToString();
+            }
             return index;
         }
 
@@ -161,11 +168,18 @@ namespace Torens_van_Hanoi
         private void Select(object sender, EventArgs e)
         {
             PictureBox pic = (sender as PictureBox);
+            
             if (pic != selection)
             {
+                if (selection != null)
+                {
+                    object O2 = Resources.ResourceManager.GetObject("Ring8");
+                    selection.Image = (Image)O2;
+                    selection = null;
+                }
                 int num = System.Convert.ToInt32(pic.Tag);
                 int tow = whichTower(pic);
-                MessageBox.Show("This ring is on tower" + tow.ToString());
+                ///MessageBox.Show("This ring is on tower" + tow.ToString());
                 for (int y = 0; y < jaggedArray3[tow].Length; y++)
                 {
                     //MessageBox.Show(jaggedArray3[tow][y].ToString());

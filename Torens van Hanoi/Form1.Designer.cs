@@ -39,6 +39,7 @@ namespace Torens_van_Hanoi
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Toren1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LabelMovesDisplay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Toren3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -179,11 +180,22 @@ namespace Torens_van_Hanoi
             this.pictureBox1.Tag = "7";
             this.pictureBox1.Click += new System.EventHandler(this.Select);
             // 
+            // LabelMovesDisplay
+            // 
+            this.LabelMovesDisplay.AutoSize = true;
+            this.LabelMovesDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelMovesDisplay.Location = new System.Drawing.Point(12, 9);
+            this.LabelMovesDisplay.Name = "LabelMovesDisplay";
+            this.LabelMovesDisplay.Size = new System.Drawing.Size(86, 24);
+            this.LabelMovesDisplay.TabIndex = 16;
+            this.LabelMovesDisplay.Text = "Moves: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 292);
+            this.Controls.Add(this.LabelMovesDisplay);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -197,7 +209,7 @@ namespace Torens_van_Hanoi
             this.Controls.Add(this.Toren3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Torens van Hanoi";
             ((System.ComponentModel.ISupportInitialize)(this.Toren3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -210,6 +222,7 @@ namespace Torens_van_Hanoi
             ((System.ComponentModel.ISupportInitialize)(this.Toren1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -226,6 +239,7 @@ namespace Torens_van_Hanoi
         private System.Windows.Forms.PictureBox Toren2;
         private System.Windows.Forms.PictureBox Toren3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LabelMovesDisplay;
     }
 }
 
