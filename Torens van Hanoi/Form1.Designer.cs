@@ -41,6 +41,7 @@ namespace Torens_van_Hanoi
             this.Ring7 = new System.Windows.Forms.PictureBox();
             this.LabelMovesDisplay = new System.Windows.Forms.Label();
             this.Btn_ResetGame = new System.Windows.Forms.Button();
+            this.Btn_Solve = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Toren3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toren2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ring6)).BeginInit();
@@ -201,11 +202,22 @@ namespace Torens_van_Hanoi
             this.Btn_ResetGame.UseVisualStyleBackColor = true;
             this.Btn_ResetGame.Click += new System.EventHandler(this.Btn_ResetGame_Click);
             // 
+            // Btn_Solve
+            // 
+            this.Btn_Solve.Location = new System.Drawing.Point(12, 65);
+            this.Btn_Solve.Name = "Btn_Solve";
+            this.Btn_Solve.Size = new System.Drawing.Size(86, 23);
+            this.Btn_Solve.TabIndex = 18;
+            this.Btn_Solve.Text = "Solve";
+            this.Btn_Solve.UseVisualStyleBackColor = true;
+            this.Btn_Solve.Click += new System.EventHandler(this.Btn_Solve_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 292);
+            this.Controls.Add(this.Btn_Solve);
             this.Controls.Add(this.Btn_ResetGame);
             this.Controls.Add(this.LabelMovesDisplay);
             this.Controls.Add(this.Ring7);
@@ -238,7 +250,7 @@ namespace Torens_van_Hanoi
 
         }
 
-        #endregion
+
 
         private System.Windows.Forms.PictureBox Ring8;
         private System.Windows.Forms.PictureBox Ring5;
@@ -253,6 +265,8 @@ namespace Torens_van_Hanoi
         private System.Windows.Forms.PictureBox Ring7;
         private System.Windows.Forms.Label LabelMovesDisplay;
         private System.Windows.Forms.Button Btn_ResetGame;
+        private System.Windows.Forms.Button Btn_Solve;
     }
 }
 
+#endregion
