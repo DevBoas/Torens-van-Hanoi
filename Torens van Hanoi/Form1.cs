@@ -328,6 +328,8 @@ namespace Torens_van_Hanoi
 
         private void Btn_Solve_Click(object sender, EventArgs e)
         {
+            if (solving)
+                return;
             reset();
             Btn_ResetGame.Enabled = false;
             solving = true;
